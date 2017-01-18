@@ -125,7 +125,6 @@
           cell.index = this.index;
           cell.target = this.target;
           cell._isColumnRow = this._isColumnRow;
-          cell.toggleAttribute('lastcolumn', columnIndex === columns.length - 1);
           cell.column = column;
 
           Polymer.dom(this).appendChild(cell);
