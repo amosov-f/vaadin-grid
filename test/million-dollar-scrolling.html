@@ -109,7 +109,7 @@
               Math.floor(grid.$.scroller.$.table.scrollHeight / 2) + 1.5 * viewportHeight - 0.5 * itemHeight;
 
             Polymer.Base.async(function() {
-              expect(getFirstCell(grid).index).to.be.closeTo(grid.size / 2, 10);
+              expect(getFirstCell(grid).index).to.be.closeTo(grid.size / 2, 20);
               done();
             }, 300);
           });
