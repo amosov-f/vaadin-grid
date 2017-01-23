@@ -71,7 +71,8 @@
       return items.filter(function(item, index) {
         return this._filters.filter(function(filter) {
           var value = Polymer.Base.get(filter.path, item) || '';
-          return value.toString().toLowerCase().indexOf(filter.value.toString().toLowerCase()) === -1;
+//           return value.toString().toLowerCase().indexOf(filter.value.toString().toLowerCase()) === -1;
+          return filter.value.toString().split(';').indexOf(value.toString()) === -1;
         }).length === 0;
       }, this);
     }
