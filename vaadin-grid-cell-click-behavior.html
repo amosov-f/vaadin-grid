@@ -31,9 +31,10 @@
     // yet at the point when tap event is being executed.
     _onClick: function(e) {
       // this event is only supposed to be fired from cells.
-      if (this.localName !== 'vaadin-grid-sorter') {
-        this.fire('cell-focus', {cell: this});
-      }
+      // starlight@: commented because it causes scroller jump to the top when clicking item somewhere at the bottom
+      // if (this.localName !== 'vaadin-grid-sorter') {
+      //   this.fire('cell-focus', {cell: this});
+      // }
 
       // Prevent item action if cell itself is not focused.
       if (this._cellClick) {
