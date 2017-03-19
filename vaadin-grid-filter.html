@@ -57,7 +57,7 @@ and handlers for filtering the grid data.
         if (isAttached) {
           this.debounce('filter-changed', function() {
             this.fire('filter-changed');
-          }, 200);
+          }, 0);
         }
       }
     });
